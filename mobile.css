@@ -1,3 +1,38 @@
 body{
-    background-color: yellowgreen;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "nav"
+    "main"
+    "footer";
 }
+
+
+nav {
+    display: none;
+    background-color: yellow;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100vh;
+   }
+
+main {
+    height: 90vh;
+    background-image: url(364.jpg);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#showNav .on { display: block;}
+    #showNav.off { display: none;}
+
+
+    #showNav:target .on{display: none;}
+    #showNav :target .off {display: block;}
+    #showNav:targetnav{display: block;
+    }
+
+
