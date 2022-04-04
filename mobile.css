@@ -1,3 +1,7 @@
+* {
+    margin:0;
+    padding:0;
+}
 body{
     display: grid;
     grid-template-columns: 100%;
@@ -21,7 +25,7 @@ nav {
 
 main {
     height: 90vh;
-    background-image: url(364.jpg);
+    background-image: url(photo.jpg);
     background-position: right;
     background-size: contain;
     background-repeat: no-repeat;

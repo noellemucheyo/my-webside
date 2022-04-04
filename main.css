@@ -4,13 +4,14 @@
 }
 
 nav{
-    background-color: white;
+    background-color:rgb(197, 180, 180);
     grid-area: nav;
 }
  
 
 main {
-    background-color: rgb(175, 41, 41);
+    
+    background-color: #66FCF1; 
     grid-area: main;
 }
 
@@ -18,3 +19,9 @@ main {
      background-color: rgb(55, 0, 255);
      grid-area: footer;
  }
+ .presentation{
+    position: static;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-80%);
+}

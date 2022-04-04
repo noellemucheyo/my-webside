@@ -1,3 +1,8 @@
+* {
+    margin:0;
+    padding:0;
+}
+
 body{
     display: grid;
     grid-template-columns: 100%;
@@ -8,7 +13,7 @@ body{
     "footer";
 }
 main{ 
-    background-color: white;
+    background-color: rgb(197, 180, 180);
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: auto;
@@ -49,7 +54,7 @@ span{
     color: #FC4445;
 }
  nav ul li a{
-     color:white;
+     color:rgb(18, 19, 20);
      text-decoration: wavy;
      font-weight: bolder;
      text-transform: capitalize;
@@ -59,3 +64,15 @@ span{
       transition: .4s;
 
   }
+  .presentation{
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-80%);
+}
+h1{
+    color: white;
+    margin: 20px 0px 25px;
+    font-size: 75px;
+    
+}
