@@ -15,7 +15,7 @@ body{
 
 nav {
     display: none;
-    background-color: yellow;
+    background-color:black;
     position: fixed;
     top: 0;
     left: 50%;
@@ -25,6 +25,7 @@ nav {
 
 main {
     height: 90vh;
+    background-color: black;
     background-image: url(photo.jpg);
     background-position: right;
     background-size: contain;
@@ -38,5 +39,4 @@ main {
     #showNav :target .off {display: block;}
     #showNav:targetnav{display: block;
     }
-
 
