@@ -12,17 +12,34 @@ body{
     "footer";
 }
 
+   
+   
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin:0 5px;
 
-nav {
-    display: none;
-    background-color:black;
-    position: fixed;
-    top: 0;
-    left: 50%;
-    width: 50%;
-    height: 100vh;
-   }
-
+}
+nav ul li a{
+    font-size: large;
+    color:white;
+    text-decoration: wavy;
+    font-weight: bolder;
+    text-transform: capitalize;
+}
+nav ul li a:hover{
+    color:#FC4445;
+    transition: .4s;
+}
+.logo{
+    color: #66FCF1;
+    font-size: 20px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+span{
+    color: #FC4445;
+}
 main {
     height: 90vh;
     background-color: black;
@@ -31,10 +48,12 @@ main {
     background-size: contain;
     background-repeat: no-repeat;
 }
+
+/* when the target isn't set, hide the "off" button and show the "on" buttn */
 #showNav .on { display: block;}
     #showNav.off { display: none;}
 
-
+/* when the target is set, hide the "on" button and show the "off" button  */
     #showNav:target .on{display: none;}
     #showNav :target .off {display: block;}
     #showNav:targetnav{display: block;
