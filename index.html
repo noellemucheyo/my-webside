@@ -9,17 +9,23 @@
     <link rel="stylesheet" href="main.css" media="screen" />
     <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 800px)" />
     <link rel="stylesheet" href="desktop.css" media="screen and (min-width: 800px)" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body id="showNav">
+<a class="shownav"></a>
     <nav>
         <h2 class="logo">Portfo<span>lio</span></h2>
         <ul >
-            <li>  <a href="#">Home</a></li>
+            <li>  <a href="index">Home</a></li>
             <li> <a href= "Portfolio.html">Portfolio</a></li>
             <li> <a href="blog.html">Blog</a></li>
             <li> <a href="report.html">Report</a></li>
             <li> <a href="contact.html">Conctact Me</a></li>
+           <!-- The form -->
+<form class="example" action="action_page.php">
+    <input type="text" placeholder="Search.." name="search">
+    <button type="submit"><i class="fa fa-search"></i></button>
+  </form>
         </ul>
     </nav>
 
@@ -42,25 +48,7 @@
        <div class="photo">
 
        </div>
-       <div class="contact">
-        <form action="form.php" method="POST">
-                       <p><input type="text" name="textbox" placeholder=" First Name.." /> </p>
-           <p><input type="text" name="textbox" placeholder="Surname.." /></p>
-           <p><input type="text" name="textbox" placeholder="Email.." /></p>
-            <p><input type="text" name="textbox" placeholder="Subject.." /></p>
-            </div>   
-            <div class="select">
-            <select name="Country">
-                    <option value="One">Canada</option>
-                    <option selected=”selected” value="Two">England</option>
-                    <option value="Three">USA</option>
-                    </select>
-                    <p><input type="text" name="textbox" placeholder="Message.." /></p>
-                    <button class="button green padding-large" type="submit">
-                        <i class="fa fa-paper-plane"></i> SEND
-                      </button>
-        </form>
-    </div>
+      
     </main> 
 
     <footer> <center>Copyright@2022 by Noelle Mucheyo</center> 

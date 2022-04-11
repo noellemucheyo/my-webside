@@ -2,6 +2,7 @@
     margin:0;
     padding:0;
 }
+
 body{
     display: grid;
     grid-template-columns: 100%;
@@ -11,43 +12,219 @@ body{
     "main"
     "footer";
 }
+main{ 
+    /* border:2px solid blue; */
+   
+    background-color:black;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    grid-area: "mainleft mainright";
+    height: 100%;
+  
+    }
 
-   
-   
+    .photo{
+        background-image: url(photo.jpg);
+        background-position: right;
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: relative;    
+        height: 75vh;
+        animation-name: photo;
+        animation-duration: 3s;
+
+    }
+/* 
+main p {
+    margin: 20%;
+} */
+
+nav{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-left: 8%;
+    padding-right: 8%;
+
+}
+
 nav ul li{
+    list-style-type: none;
     display: inline-block;
-    line-height: 80px;
-    margin:0 5px;
-
-}
-nav ul li a{
-    font-size: large;
-    color:white;
-    text-decoration: wavy;
-    font-weight: bolder;
-    text-transform: capitalize;
-}
-nav ul li a:hover{
-    color:#FC4445;
-    transition: .4s;
+    padding: 10px 25px;
 }
 .logo{
     color: #66FCF1;
-    font-size: 20px;
+    font-size: 35px;
     letter-spacing: 1px;
     cursor: pointer;
 }
 span{
     color: #FC4445;
 }
-main {
-    height: 90vh;
-    background-color: black;
-    background-image: url(photo.jpg);
-    background-position: right;
-    background-size: contain;
-    background-repeat: no-repeat;
+ nav ul li a{
+     font-size: medium;
+     color:white;
+     text-decoration: wavy;
+     font-weight: bolder;
+     text-transform: capitalize;
+ }
+  nav ul li a:hover{
+      color:#FC4445;
+      transition: .4s;
+
+  }
+  .presentation{
+      /* border: 2px solid yellow; */
+      padding-left: 15%;
+      animation-name: presentation;
+      animation-duration: 3s;
+      position: relative; 
+      top: 100px; 
+
+
+  
 }
+h1{
+    color: white;
+       font-size: 10vh; 
+}
+h3,h4{
+    color:white ;
+
+}
+
+.presentation form{
+   
+    width: 100%;
+   
+    position: relative;
+}
+.presentation form input:first-child{
+    display: inline-block;
+    width: 70%;
+    padding: 14px 130px 14px 15px;
+    border: 2px solid #FC4445 ;
+    outline: none;
+    border-radius: 30px;
+}
+
+.presentation form input:last-child{
+    display: inline-block;
+    /* position: absolute; */
+    width: 20%;
+     border:none;
+     margin-left: -21.34%;
+     padding: 15px 0px; 
+    outline: none;
+    border-radius: 30px;
+    background-color: #FC4445;
+    color: white;
+    box-shadow: 0px 0px 5px #000, 0px 0px 15px #858585;
+       top: 6px;
+       right:6px ;
+} 
+
+@keyframes photo {
+    0%   { left:500px; top:0px;}
+    100%  { left:0px; top:0px;}
+   
+  }
+  @keyframes presentation {
+        0%   { left:-500px; top:100px;}
+    100%  { left:0px; top:100px;}
+   
+  }
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* Style inputs */
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Style the container/contact section */
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+  }
+  
+  /* Create two columns that float next to eachother */
+  .column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  /* .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  } */
+  .row{
+      width: 100%;
+      border: 2px solid #FC4445;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+.column-contact{
+  padding: 50px;
+  width: 50%;
+  color: white;
+  }
+  .row-contact{
+    background-color: black;
+    height: 100%;
+    display: flex;
+  }
+  label{
+    color: white;
+  }
+  .column-portfolio{
+        width: 25%;
+    color: white;
+   
+    }
+    .row-portfolio{
+      background-color: black;
+      height: 75vh;
+      display: flex;
+      padding-top: 100px;
+      padding-bottom: 50px;
+      
+
+    }
+
 
 /* when the target isn't set, hide the "off" button and show the "on" buttn */
 #showNav .on { display: block;}
@@ -59,3 +236,11 @@ main {
     #showNav:targetnav{display: block;
     }
 
+    .shownav {
+        height: 0.8em;
+        width: 1.25em;
+        display: block;
+         border-top: 0.2em solid white;
+        border-bottom: 0.2em solid white;
+        border-radius: 0.1em;
+        }

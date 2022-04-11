@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="main.css" media="screen" />
     <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 800px)" />
     <link rel="stylesheet" href="desktop.css" media="screen and (min-width: 800px)" />
+    
 </head>
 
 <body>
@@ -24,34 +25,38 @@
         </ul>
     </nav>
 
-    <main>
-        <a href="#showNav" class="on">on</a>
-        <a href="#" class="off">off</a> 
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro cupiditate laborum illum iusto officiis molestias ex error! Tenetur officia, beatae molestias dolor accusamus dolore quidem provident maxime suscipit facere voluptatibus!</p>
-  
-        <div class="contact">
-            <form action="form.php" method="POST">
-                           <p><input type="text" name="textbox" placeholder=" First Name.." /> </p>
-               <p><input type="text" name="textbox" placeholder="Surname.." /></p>
-               <p><input type="text" name="textbox" placeholder="Email.." /></p>
-                <p><input type="text" name="textbox" placeholder="Subject.." /></p>
-                </div>   
-                <div class="select">
-                <select name="Country">
-                        <option value="One">Canada</option>
-                        <option selected=”selected” value="Two">England</option>
-                        <option value="Three">USA</option>
-                        </select>
-                        <p><input type="text" name="textbox" placeholder="Message.." /></p>
-                        <button class="button green padding-large" type="submit">
-                            <i class="fa fa-paper-plane"></i> SEND
-                          </button>
-            </form>
-        </div>
-       
-    </main>
-
-   <footer><center>Copyright@2022 by Noelle Mucheyo</center> </footer>
+    <div class="row-contact">
+                    <div class="column-contact">
+                     <div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="450" id="gmap_canvas" src="https://maps.google.com/maps?q=48%20roseberry%20avenue&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-to.org"></a><br><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}</style><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style></div></div>
+                <div class="w3-section">
+                  <p> Chicago, UK</p>
+                  <p> Phone: +7473131543</p>
+                  <p> Email:dnoelle@mail.fr</p>
+                </div>
+                
+              </div>
+              <div class="column-contact">
+                <form action="mailto:dnoelle2001@yahoo.fr">
+                  <label for="fname">First Name</label>
+                  <input type="text" id="fname" name="firstname" placeholder="Your name">
+                  <label for="lname">Last Name</label>
+                  <input type="text" id="lname" name="lastname" placeholder="Your last name">
+                                  <label for="country">Country</label>
+                  <select id="country" name="country">
+                    <option value="australia">Australia</option>
+                    <option value="canada">Canada</option>
+                    <option value="usa">USA</option>
+                  </select>
+                  <label for="mail">Email</label>
+                  <input type="text" id="email" name="mail" placeholder="Your email">
+                  <label for="subject">Subject</label>
+                  <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+                  <input type="submit" value="Submit">
+                </form>
+              </div>
+            </div>
+          </div>
+   ,   <footer><center>Copyright@2022 by Noelle Mucheyo</center> </footer>
     
 </body>
 
