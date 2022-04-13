@@ -252,3 +252,11 @@ h3,h4{
       clear: both;
       display: table;
     }
+    .mapouter{
+
+      padding-top: 10%;
+    }
+    .noelcontact{
+      padding-top: 10%;
+      color: #FC4445;
+    }
