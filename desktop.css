@@ -278,3 +278,14 @@ h3,h4{
           
        }
       
+
+       .reportPage {
+         background-color: white;
+       }
+
+       .on,.off {
+         display: none;
+       }
+       .Portfoliomain {
+         background-color: white;
+       }
