@@ -266,21 +266,35 @@ h3,h4{
       border:2px solid blue;
       color:black;
       background-color: white ;
-      margin-top: 100px;
-      margin-right: 100px;
+     
+      /* margin-right: 100px; */
 
           
                               }
-     .report-heading{
-      color: white;
-      padding-left: 600px;
-          text-shadow: 2px 2px #FC4445;
-          
-       }
+    .reportPage h1{
+      color: #1d1414;
+      margin-bottom: 50px;
+      text-shadow: #FC0 1px 0 10px;
+    }
+
+    .reportPage h2{
+      color: #1d1414;
+      margin-bottom: 20px;
+      margin-top: 20px;
+      text-shadow: #FC0 1px 0 10px;
+    }
+      
       
 
        .reportPage {
          background-color: white;
+         /* creer lespace audecu de report */
+         padding-top: 80px; 
+
+         /* create space right and left page */
+         padding-left: 20%;
+         padding-right: 20%;
+         padding-bottom: 50px;
        }
 
        .on,.off {
@@ -289,3 +303,26 @@ h3,h4{
        .Portfoliomain {
          background-color: white;
        }
+       
+       .main-blog{
+        border: 2px solid yellow;
+        width: 50%;
+        padding: 80px 25px;
+       }
+
+      .aside-blog{
+        width: 25%;
+        border: 2px solid blue;
+        padding: 80px 15px;
+        background-color: #858585;
+
+      }
+
+      .blog-content{
+        display: flex;
+        height: 90vh;
+      
+      }
+      .button{
+        margin-top: 5px;
+      }
