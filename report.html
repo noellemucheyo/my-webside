@@ -34,28 +34,32 @@
          <h1>Report</h1>
         
                  
-                     <h2>  subheading1 </h2>
-            <p>Redundant data
-                Data that appears in more than one place.
-                
-                NULL
-                NULLs are markers indicating the lack of a value, which is confusing to work with.  NULLs are not equivalent to zero.  NULL values cannot be removed entirely from a database as they define optionality.
-                
-                Functional Dependency
-                Normalisation has one semantic concept; functional dependence.  The primary key determines all other data items.  Non key items must depend on the key, the whole key and nothing but the key.
-                
-                DRY
-                Normalisation does not directly apply to anything outside of databases. The principles of normalisation are quite specific to relational databases.  However the general underlying theme, that you shouldn't have duplicate data, can be applied broadly in software engineering. This is the DRY principle (Don’t Repeat Yourself).
-                
-                
-                Normal Form Levels
-                There are a number of normalisation levels from 1st normal form through Boyce Codd level to 15th normal form.  Each normal form describes how to remove of some specific problem, usually related to redundancy. 3NF is appropriate for most professional applications.  The problem solved by normal forms above 3NF are quite rare problems, so chances are that your schema is already in 5NF.
-                
-                Note: You can remember the first three normal forms by the terms 
-                
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro cupiditate laborum illum iusto officiis molestias ex error! Tenetur officia, beatae molestias dolor accusamus dolore quidem provident maxime suscipit facere voluptatibus!</p>
-   <h2>subheading2 </h2>
-        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro cupiditate laborum illum iusto  </p>
+                     <h2>  My reflexion  </h2>
+            <p>This report contains my learning experience of web development and the debugging process. 
+                First, it was a great experience to me because it my first time to make a website with CSS and HTML. What I found the most difficult it was to use padding and margin to layout the page. But in the other hand I find very easy to give colours to elements. 
+                It took more months to be able to create this website because I need to understand how the HTML and the CSS works. The most positive part of this experience was to see the outcome of the combination of these language on the website.
+                </p>
+   <h2>Design process </h2>
+        <p> For my background color a choose black because is an easy color to associates with other color and the black colour give a professional touch to a layout.
+            At the home page I present myself and a add my photo to populate the main of my page.
+            I use white color for my text because I think It bring a good contrast with back background color. For the font part I add an animation from right to left for the photo and from left to right for the block presentation. I use @keyframe this animation allows those two element that I call photo and presentation to change from a style to another one with I found very interesting.
+            @keyframes photo {
+                0%   { left:500px; top:0px;}
+                100%  { left:0px; top:0px;}
+               
+              }
+              @keyframes presentation {
+                    0%   { left:-500px; top:100px;}
+                100%  { left:0px; top:100px;}
+        </p>
+            <P><img src="first.PNG" alt="first" width="200" height="200"></P>
+            
+                          <p>
+                For the profolio a create four classes to layout all the modules block I gave same height 200 pixel and same width 300 pixel to have a nice layout. I also use p element to defines paragraph  which contain the module description and h2 for the heading </p> 
+               <p>For the blog page I have create a main class inside I insert three classes I also insert aside block to layout my blog page then I add CSS property segment it.
+               </p>
+               <p> the contact me page a create form to collect the user input for kept my background contact form in white so the user can see the form properly.
+                </p>
     
             </section>
 

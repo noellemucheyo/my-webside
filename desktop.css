@@ -2,7 +2,7 @@
     margin:0;
     padding:0;
 }
-
+ /* body layout  */
 body{
     display: grid;
     grid-template-columns: 100%;
@@ -23,7 +23,7 @@ main{
     height: 100%;
   
     }
-
+ /* my index photo layout  */
     .photo{
         background-image: url(photo.jpg);
         background-position: right;
@@ -39,7 +39,7 @@ main{
 main p {
     margin: 20%;
 } */
-
+ /* navigation layout  */
 nav{
     background-color: black;
     display: flex;
@@ -309,7 +309,7 @@ h3,h4{
        }
        
        .main-blog{
-        border: 2px solid yellow;
+        /* border: 2px solid yellow; */
         width: 50%;
         padding: 80px 25px;
        }
@@ -321,7 +321,7 @@ h3,h4{
 
       .aside-blog{
         width: 25%;
-        border: 2px solid blue;
+        /* border: 2px solid blue; */
         padding: 80px 15px;
         background-color: #858585;
 
