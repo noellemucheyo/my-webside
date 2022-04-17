@@ -215,6 +215,10 @@ h3,h4{
     color: white;
    
     }
+    .column-portfolio h2{
+      color: #FC4445 ;
+      text-shadow: 1px 1px white;
+    }
     .row-portfolio{
       background-color: black;
       height: 75vh;
